@@ -59,7 +59,6 @@ f. ## Get the names of employees who have never made a sale to a customer in the
 
 Consider the following data describing baseball teams and results of games:
 
-macbook-pro:baseball raj$ more teams.dat 
 
 Braves:Atlanta:ATL
 
@@ -72,7 +71,6 @@ Diamondbacks:Arizona:ARI
 Indians:Cleveland:CLE
 
 
-macbook-pro:baseball raj$ more games.dat
 
 2004-03-20:ARI:CHC:10:11
 
