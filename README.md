@@ -20,10 +20,15 @@ Consider the JSON document company.json. This document describes data about comp
 Consider the company.json document from previous problem. Write JSONiq query expressions for the following queries
 
  a. (: Retrieve the name and address of employees who work for the "Research" department. :)
+ 
  b. (: Find the names of employees who work on all the projects controlled by department number 5. :)
+ 
  c. (: List the names of all employees with two or more dependents. :)
+ 
  d. (: List the names of all employees who have a dependent with the same first name as themselves. :)
+ 
  e. (: Find the names of employees who are directly supervised by ‘Franklin Wong’. :)
+ 
  f. (: Retrieve the names and addresses of all employees who work on at least one project located in Houston but whose department has no location in Houston. :)
  
  # Part III : MongoDB Queries 
