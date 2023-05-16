@@ -71,6 +71,7 @@ Diamondbacks:Arizona:ARI
 
 Indians:Cleveland:CLE
 
+
 macbook-pro:baseball raj$ more games.dat
 
 2004-03-20:ARI:CHC:10:11
@@ -133,7 +134,9 @@ You may assume that the rest of the data is accurate, i.e. there are no data typ
 which returns the standings information as a JSON object shown below:
 
 { standings: [
+
     { losses: 3, percent: 0.667, tcode: "CHC", ties: 0, tname: "Cubs", wins: 6 },
+    
     { losses: 3, percent: 0.611, tcode: "ARI", ties: 1, tname: "Diamondbacks", wins: 5 },
     
     { losses: 5, percent: 0.444, tcode: "STL", ties: 0, tname: "Cardinals", wins: 4 },
@@ -148,6 +151,7 @@ and
 which returns a list of game results for a particular team in chronological order as a JSON object shown below:
 {
   results: [
+  
     { gdate: "2004-03-20", opponent: "ARI", result: "WIN", them: 10, us: 11 },
     { gdate: "2004-03-27", opponent: "STL", result: "WIN", them: 7, us: 9 },
     { gdate: "2004-03-30", opponent: "ATL", result: "LOSS", them: 10, us: 5 },
