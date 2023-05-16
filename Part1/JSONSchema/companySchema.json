@@ -1,0 +1,5142 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "title": "Company Schema",
+    "description": "This is the JSON schema to validate database company ",
+    "type": "object",
+    "properties": {
+      "departments": {
+        "type": "array",
+        "items": [
+          {
+            "type": "object",
+            "properties": {
+              "dno": {
+                "type": "integer"
+              },
+              "dname": {
+                "type": "string"
+              },
+              "locations": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "string"
+                  }
+                ]
+              },
+              "manager": {
+                "type": "object",
+                "properties": {
+                  "mssn": {
+                    "type": "string"
+                  },
+                  "startDate": {
+                    "type": "string",
+                    "pattern":"^(0[1-9]|[1-2][0-9]|3[0-1])-([a-zA-Z]{3}|1[0-2])-(19|20)[0-9][0-9]$"
+                  }
+                },
+                "required": [
+                  "mssn",
+                  "startDate"
+                ]
+              },
+              "employees": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "string"
+                  }
+                ]
+              },
+              "projectsControlled": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "integer"
+                  }
+                ]
+              }
+            },
+            "required": [
+              "dno",
+              "dname",
+              "locations",
+              "manager",
+              "employees",
+              "projectsControlled"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "dno": {
+                "type": "integer"
+              },
+              "dname": {
+                "type": "string"
+              },
+              "locations": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "string"
+                  }
+                ]
+              },
+              "manager": {
+                "type": "object",
+                "properties": {
+                  "mssn": {
+                    "type": "string"
+                  },
+                  "startDate": {
+                    "type": "string",
+                    "pattern": "^(0[1-9]|[1-2][0-9]|3[0-1])-([a-zA-Z]{3}|1[0-2])-(19|20)[0-9][0-9]$"
+                  }
+                },
+                "required": [
+                  "mssn",
+                  "startDate"
+                ]
+              },
+              "employees": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "string"
+                  }
+                ]
+              },
+              "projectsControlled": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "integer"
+                  },
+                  {
+                    "type": "integer"
+                  }
+                ]
+              }
+            },
+            "required": [
+              "dno",
+              "dname",
+              "locations",
+              "manager",
+              "employees",
+              "projectsControlled"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "dno": {
+                "type": "integer"
+              },
+              "dname": {
+                "type": "string"
+              },
+              "locations": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "string"
+                  }
+                ]
+              },
+              "manager": {
+                "type": "object",
+                "properties": {
+                  "mssn": {
+                    "type": "string"
+                  },
+                  "startDate": {
+                    "type": "string",
+                    "pattern": "^(0[1-9]|[1-2][0-9]|3[0-1])-([a-zA-Z]{3}|1[0-2])-(19|20)[0-9][0-9]$"
+
+                  }
+                },
+                "required": [
+                  "mssn",
+                  "startDate"
+                ]
+              },
+              "employees": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "string"
+                  }
+                ]
+              },
+              "projectsControlled": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "integer"
+                  },
+                  {
+                    "type": "integer"
+                  },
+                  {
+                    "type": "integer"
+                  }
+                ]
+              }
+            },
+            "required": [
+              "dno",
+              "dname",
+              "locations",
+              "manager",
+              "employees",
+              "projectsControlled"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "dno": {
+                "type": "integer"
+              },
+              "dname": {
+                "type": "string"
+              },
+              "locations": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "string"
+                  }
+                ]
+              },
+              "manager": {
+                "type": "object",
+                "properties": {
+                  "mssn": {
+                    "type": "string"
+                  },
+                  "startDate": {
+                    "type": "string",
+                    "pattern": "^(0[1-9]|[1-2][0-9]|3[0-1])-([a-zA-Z]{3}|1[0-2])-(19|20)[0-9][0-9]$"
+                  }
+                },
+                "required": [
+                  "mssn",
+                  "startDate"
+                ]
+              },
+              "employees": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "string"
+                  }
+                ]
+              },
+              "projectsControlled": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "integer"
+                  },
+                  {
+                    "type": "integer"
+                  },
+                  {
+                    "type": "integer"
+                  }
+                ]
+              }
+            },
+            "required": [
+              "dno",
+              "dname",
+              "locations",
+              "manager",
+              "employees",
+              "projectsControlled"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "dno": {
+                "type": "integer"
+              },
+              "dname": {
+                "type": "string"
+              },
+              "locations": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "string"
+                  }
+                ]
+              },
+              "manager": {
+                "type": "object",
+                "properties": {
+                  "mssn": {
+                    "type": "string"
+                  },
+                  "startDate": {
+                    "type": "string",
+                    "pattern": "^(0[1-9]|[1-2][0-9]|3[0-1])-([a-zA-Z]{3}|1[0-2])-(19|20)[0-9][0-9]$"
+                  }
+                },
+                "required": [
+                  "mssn",
+                  "startDate"
+                ]
+              },
+              "employees": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "string"
+                  }
+                ]
+              },
+              "projectsControlled": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "integer"
+                  },
+                  {
+                    "type": "integer"
+                  }
+                ]
+              }
+            },
+            "required": [
+              "dno",
+              "dname",
+              "locations",
+              "manager",
+              "employees",
+              "projectsControlled"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "dno": {
+                "type": "integer"
+              },
+              "dname": {
+                "type": "string"
+              },
+              "locations": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "string"
+                  }
+                ]
+              },
+              "manager": {
+                "type": "object",
+                "properties": {
+                  "mssn": {
+                    "type": "string"
+                  },
+                  "startDate": {
+                    "type": "string",
+                    "pattern": "^(0[1-9]|[1-2][0-9]|3[0-1])-([a-zA-Z]{3}|1[0-2])-(19|20)[0-9][0-9]$"
+                  }
+                },
+                "required": [
+                  "mssn",
+                  "startDate"
+                ]
+              },
+              "employees": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "string"
+                  }
+                ]
+              },
+              "projectsControlled": {
+                "type": "array",
+                "items": {}
+              }
+            },
+            "required": [
+              "dno",
+              "dname",
+              "locations",
+              "manager",
+              "employees",
+              "projectsControlled"
+            ]
+          }
+        ]
+      },
+      "employees": {
+        "type": "array",
+        "items": [
+          {
+            "type": "object",
+            "properties": {
+              "ssn": {
+                "type": "string",
+                "pattern": "^[0-9]{9}$"
+              },
+              "worksFor": {
+                "type": "integer"
+              },
+              "supervisor": {
+                "type": "string"
+              },
+              "manages": {
+                "type": "integer"
+              },
+              "fname": {
+                "type": "string"
+              },
+              "minit": {
+                "type": "string"
+              },
+              "lname": {
+                "type": "string"
+              },
+              "dob": {
+                "type": "string",
+                "pattern": "^(0[1-9]|[1-2][0-9]|3[0-1])-([a-zA-Z]{3}|1[0-2])-(19|20)[0-9][0-9]$"
+              },
+              "address": {
+                "type": "string"
+              },
+              "sex": {
+                "type": "string",
+                "enum": ["M", "F"]
+              },
+              "salary": {
+                "type": "integer"
+              },
+              "dependents": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "dependentName": {
+                        "type": "string"
+                      },
+                      "sex": {
+                        "type": "string",
+                        "enum": ["M", "F"]
+                      },
+                      "dob": {
+                        "type": "string",
+                        "pattern": "^(0[1-9]|[1-2][0-9]|3[0-1])-([a-zA-Z]{3}|1[0-2])-(19|20)[0-9][0-9]$"
+                      },
+                      "relationship": {
+                        "type": "string",
+                        "enum": ["Son", "Daughter", "Spouse"]
+                      }
+                    },
+                    "required": [
+                      "dependentName",
+                      "sex",
+                      "dob",
+                      "relationship"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "dependentName": {
+                        "type": "string"
+                      },
+                      "sex": {
+                        "type": "string",
+                        "enum": ["M", "F"]
+                      },
+                      "dob": {
+                        "type": "string",
+                        "pattern": "^(0[1-9]|[1-2][0-9]|3[0-1])-([a-zA-Z]{3}|1[0-2])-(19|20)[0-9][0-9]$"
+                      },
+                      "relationship": {
+                        "type": "string",
+                        "enum": ["Son", "Daughter", "Spouse"]
+                      }
+                    },
+                    "required": [
+                      "dependentName",
+                      "sex",
+                      "dob",
+                      "relationship"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "dependentName": {
+                        "type": "string"
+                      },
+                      "sex": {
+                        "type": "string",
+                        "enum": ["M", "F"]
+                      },
+                      "dob": {
+                        "type": "string",
+                        "pattern": "^(0[1-9]|[1-2][0-9]|3[0-1])-([a-zA-Z]{3}|1[0-2])-(19|20)[0-9][0-9]$"
+                      },
+                      "relationship": {
+                        "type": "string",
+                        "enum": ["Son", "Daughter", "Spouse"]
+                      }
+                    },
+                    "required": [
+                      "dependentName",
+                      "sex",
+                      "dob",
+                      "relationship"
+                    ]
+                  }
+                ]
+              },
+              "supervisees": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "string"
+                  }
+                ]
+              },
+              "projects": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "pno": {
+                        "type": "integer"
+                      },
+                      "hours": {
+                        "type": "number",
+                        "maximum": 40
+                      }
+                    },
+                    "required": [
+                      "pno",
+                      "hours"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "pno": {
+                        "type": "integer"
+                      },
+                      "hours": {
+                        "type": "number",
+                        "maximum": 40
+                      }
+                    },
+                    "required": [
+                      "pno",
+                      "hours"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "pno": {
+                        "type": "integer"
+                      },
+                      "hours": {
+                        "type": "number",
+                        "maximum": 40
+                      }
+                    },
+                    "required": [
+                      "pno",
+                      "hours"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "pno": {
+                        "type": "integer"
+                      },
+                      "hours": {
+                        "type": "number"
+                      }
+                    },
+                    "required": [
+                      "pno",
+                      "hours"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "pno": {
+                        "type": "integer"
+                      },
+                      "hours": {
+                        "type": "number",
+                        "maximum": 40
+                      }
+                    },
+                    "required": [
+                      "pno",
+                      "hours"
+                    ]
+                  }
+                ]
+              }
+            },
+            "required": [
+              "ssn",
+              "worksFor",
+              "supervisor",
+              "manages",
+              "fname",
+              "minit",
+              "lname",
+              "dob",
+              "address",
+              "sex",
+              "salary",
+              "dependents",
+              "supervisees",
+              "projects"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "ssn": {
+                "type": "string",
+                "pattern": "^[0-9]{9}$"
+              },
+              "worksFor": {
+                "type": "integer"
+              },
+              "manages": {
+                "type": "integer"
+              },
+              "fname": {
+                "type": "string"
+              },
+              "minit": {
+                "type": "string"
+              },
+              "lname": {
+                "type": "string"
+              },
+              "dob": {
+                "type": "string",
+                "pattern": "^(0[1-9]|[1-2][0-9]|3[0-1])-([a-zA-Z]{3}|1[0-2])-(19|20)[0-9][0-9]$"
+              },
+              "address": {
+                "type": "string"
+              },
+              "sex": {
+                "type": "string",
+                "enum": ["M", "F"]
+              },
+              "salary": {
+                "type": "integer"
+              },
+              "supervisees": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "string"
+                  }
+                ]
+              },
+              "projects": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "pno": {
+                        "type": "integer"
+                      },
+                      "hours": {
+                        "type": "number",
+                        "maximum": 40
+                      }
+                    },
+                    "required": [
+                      "pno",
+                      "hours"
+                    ]
+                  }
+                ]
+              }
+            },
+            "required": [
+              "ssn",
+              "worksFor",
+              "manages",
+              "fname",
+              "minit",
+              "lname",
+              "dob",
+              "address",
+              "sex",
+              "salary",
+              "supervisees",
+              "projects"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "ssn": {
+                "type": "string",
+                "pattern": "^[0-9]{9}$"
+              },
+              "worksFor": {
+                "type": "integer"
+              },
+              "supervisor": {
+                "type": "string"
+              },
+              "manages": {
+                "type": "integer"
+              },
+              "fname": {
+                "type": "string"
+              },
+              "minit": {
+                "type": "string"
+              },
+              "lname": {
+                "type": "string"
+              },
+              "dob": {
+                "type": "string",
+                "pattern": "^(0[1-9]|[1-2][0-9]|3[0-1])-([a-zA-Z]{3}|1[0-2])-(19|20)[0-9][0-9]$"
+              },
+              "address": {
+                "type": "string"
+              },
+              "sex": {
+                "type": "string",
+                "enum": ["M", "F"]
+              },
+              "salary": {
+                "type": "integer"
+              },
+              "dependents": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "dependentName": {
+                        "type": "string"
+                      },
+                      "sex": {
+                        "type": "string",
+                        "enum": ["M", "F"]
+                      },
+                      "dob": {
+                        "type": "string",
+                        "pattern": "^(0[1-9]|[1-2][0-9]|3[0-1])-([a-zA-Z]{3}|1[0-2])-(19|20)[0-9][0-9]$"
+                      },
+                      "relationship": {
+                        "type": "string",
+                        "enum": ["Son", "Daughter", "Spouse"]
+                      }
+                    },
+                    "required": [
+                      "dependentName",
+                      "sex",
+                      "dob",
+                      "relationship"
+                    ]
+                  }
+                ]
+              },
+              "supervisees": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "string"
+                  }
+                ]
+              },
+              "projects": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "pno": {
+                        "type": "integer"
+                      },
+                      "hours": {
+                        "type": "number",
+                        "maximum": 40
+                      }
+                    },
+                    "required": [
+                      "pno",
+                      "hours"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "pno": {
+                        "type": "integer"
+                      },
+                      "hours": {
+                        "type": "number",
+                        "maximum": 40
+                      }
+                    },
+                    "required": [
+                      "pno",
+                      "hours"
+                    ]
+                  }
+                ]
+              }
+            },
+            "required": [
+              "ssn",
+              "worksFor",
+              "supervisor",
+              "manages",
+              "fname",
+              "minit",
+              "lname",
+              "dob",
+              "address",
+              "sex",
+              "salary",
+              "dependents",
+              "supervisees",
+              "projects"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "ssn": {
+                "type": "string",
+                "pattern": "^[0-9]{9}$"
+              },
+              "worksFor": {
+                "type": "integer"
+              },
+              "supervisor": {
+                "type": "string"
+              },
+              "fname": {
+                "type": "string"
+              },
+              "minit": {
+                "type": "string"
+              },
+              "lname": {
+                "type": "string"
+              },
+              "dob": {
+                "type": "string",
+                "pattern": "^(0[1-9]|[1-2][0-9]|3[0-1])-([a-zA-Z]{3}|1[0-2])-(19|20)[0-9][0-9]$"
+              },
+              "address": {
+                "type": "string"
+              },
+              "sex": {
+                "type": "string",
+                "enum": ["M", "F"]
+              },
+              "salary": {
+                "type": "integer"
+              },
+              "dependents": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "dependentName": {
+                        "type": "string"
+                      },
+                      "sex": {
+                        "type": "string",
+                        "enum": ["M", "F"]
+                      },
+                      "dob": {
+                        "type": "string",
+                        "pattern": "^(0[1-9]|[1-2][0-9]|3[0-1])-([a-zA-Z]{3}|1[0-2])-(19|20)[0-9][0-9]$"
+                      },
+                      "relationship": {
+                        "type": "string",
+                        "enum": ["Son", "Daughter", "Spouse"]
+                      }
+                    },
+                    "required": [
+                      "dependentName",
+                      "sex",
+                      "dob",
+                      "relationship"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "dependentName": {
+                        "type": "string"
+                      },
+                      "sex": {
+                        "type": "string",
+                        "enum": ["M", "F"]
+                      },
+                      "dob": {
+                        "type": "string",
+                        "pattern": "^(0[1-9]|[1-2][0-9]|3[0-1])-([a-zA-Z]{3}|1[0-2])-(19|20)[0-9][0-9]$"
+                      },
+                      "relationship": {
+                        "type": "string",
+                        "enum": ["Son", "Daughter", "Spouse"]
+                      }
+                    },
+                    "required": [
+                      "dependentName",
+                      "sex",
+                      "dob",
+                      "relationship"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "dependentName": {
+                        "type": "string"
+                      },
+                      "sex": {
+                        "type": "string",
+                        "enum": ["M", "F"]
+                      },
+                      "dob": {
+                        "type": "string",
+                        "pattern": "^(0[1-9]|[1-2][0-9]|3[0-1])-([a-zA-Z]{3}|1[0-2])-(19|20)[0-9][0-9]$"
+                      },
+                      "relationship": {
+                        "type": "string",
+                        "enum": ["Son", "Daughter", "Spouse"]
+                      }
+                    },
+                    "required": [
+                      "dependentName",
+                      "sex",
+                      "dob",
+                      "relationship"
+                    ]
+                  }
+                ]
+              },
+              "projects": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "pno": {
+                        "type": "integer"
+                      },
+                      "hours": {
+                        "type": "number",
+                        "maximum": 40
+                      }
+                    },
+                    "required": [
+                      "pno",
+                      "hours"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "pno": {
+                        "type": "integer"
+                      },
+                      "hours": {
+                        "type": "number",
+                        "maximum": 40
+                      }
+                    },
+                    "required": [
+                      "pno",
+                      "hours"
+                    ]
+                  }
+                ]
+              }
+            },
+            "required": [
+              "ssn",
+              "worksFor",
+              "supervisor",
+              "fname",
+              "minit",
+              "lname",
+              "dob",
+              "address",
+              "sex",
+              "salary",
+              "dependents",
+              "projects"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "ssn": {
+                "type": "string",
+                "pattern": "^[0-9]{9}$"
+              },
+              "worksFor": {
+                "type": "integer"
+              },
+              "supervisor": {
+                "type": "string"
+              },
+              "fname": {
+                "type": "string"
+              },
+              "minit": {
+                "type": "string"
+              },
+              "lname": {
+                "type": "string"
+              },
+              "dob": {
+                "type": "string",
+                "pattern": "^(0[1-9]|[1-2][0-9]|3[0-1])-([a-zA-Z]{3}|1[0-2])-(19|20)[0-9][0-9]$"
+              },
+              "address": {
+                "type": "string"
+              },
+              "sex": {
+                "type": "string",
+                "enum": ["M", "F"]
+              },
+              "salary": {
+                "type": "integer"
+              },
+              "projects": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "pno": {
+                        "type": "integer"
+                      },
+                      "hours": {
+                        "type": "number",
+                        "maximum": 40
+                      }
+                    },
+                    "required": [
+                      "pno",
+                      "hours"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "pno": {
+                        "type": "integer"
+                      },
+                      "hours": {
+                        "type": "number",
+                        "maximum": 40
+                      }
+                    },
+                    "required": [
+                      "pno",
+                      "hours"
+                    ]
+                  }
+                ]
+              }
+            },
+            "required": [
+              "ssn",
+              "worksFor",
+              "supervisor",
+              "fname",
+              "minit",
+              "lname",
+              "dob",
+              "address",
+              "sex",
+              "salary",
+              "projects"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "ssn": {
+                "type": "string",
+                "pattern": "^[0-9]{9}$"
+              },
+              "worksFor": {
+                "type": "integer"
+              },
+              "supervisor": {
+                "type": "string"
+              },
+              "fname": {
+                "type": "string"
+              },
+              "minit": {
+                "type": "string"
+              },
+              "lname": {
+                "type": "string"
+              },
+              "dob": {
+                "type": "string",
+                "pattern": "^(0[1-9]|[1-2][0-9]|3[0-1])-([a-zA-Z]{3}|1[0-2])-(19|20)[0-9][0-9]$"
+              },
+              "address": {
+                "type": "string"
+              },
+              "sex": {
+                "type": "string",
+                "enum": ["M", "F"]
+              },
+              "salary": {
+                "type": "integer"
+              },
+              "projects": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "pno": {
+                        "type": "integer"
+                      },
+                      "hours": {
+                        "type": "number",
+                        "maximum": 40
+                      }
+                    },
+                    "required": [
+                      "pno",
+                      "hours"
+                    ]
+                  }
+                ]
+              }
+            },
+            "required": [
+              "ssn",
+              "worksFor",
+              "supervisor",
+              "fname",
+              "minit",
+              "lname",
+              "dob",
+              "address",
+              "sex",
+              "salary",
+              "projects"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "ssn": {
+                "type": "string",
+                "pattern": "^[0-9]{9}$"
+              },
+              "worksFor": {
+                "type": "integer"
+              },
+              "supervisor": {
+                "type": "string"
+              },
+              "fname": {
+                "type": "string"
+              },
+              "minit": {
+                "type": "string"
+              },
+              "lname": {
+                "type": "string"
+              },
+              "dob": {
+                "type": "string",
+                "pattern": "^(0[1-9]|[1-2][0-9]|3[0-1])-([a-zA-Z]{3}|1[0-2])-(19|20)[0-9][0-9]$"
+              },
+              "address": {
+                "type": "string"
+              },
+              "sex": {
+                "type": "string",
+                "enum": ["M", "F"]
+              },
+              "salary": {
+                "type": "integer"
+              },
+              "projects": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "pno": {
+                        "type": "integer"
+                      },
+                      "hours": {
+                        "type": "number",
+                        "maximum": 40
+                      }
+                    },
+                    "required": [
+                      "pno",
+                      "hours"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "pno": {
+                        "type": "integer"
+                      },
+                      "hours": {
+                        "type": "number",
+                        "maximum": 40
+                      }
+                    },
+                    "required": [
+                      "pno",
+                      "hours"
+                    ]
+                  }
+                ]
+              }
+            },
+            "required": [
+              "ssn",
+              "worksFor",
+              "supervisor",
+              "fname",
+              "minit",
+              "lname",
+              "dob",
+              "address",
+              "sex",
+              "salary",
+              "projects"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "ssn": {
+                "type": "string",
+                "pattern": "^[0-9]{9}$"
+              },
+              "worksFor": {
+                "type": "integer"
+              },
+              "supervisor": {
+                "type": "string"
+              },
+              "fname": {
+                "type": "string"
+              },
+              "minit": {
+                "type": "string"
+              },
+              "lname": {
+                "type": "string"
+              },
+              "dob": {
+                "type": "string",
+                "pattern": "^(0[1-9]|[1-2][0-9]|3[0-1])-([a-zA-Z]{3}|1[0-2])-(19|20)[0-9][0-9]$"
+              },
+              "address": {
+                "type": "string"
+              },
+              "sex": {
+                "type": "string",
+                "enum": ["M", "F"]
+              },
+              "salary": {
+                "type": "integer"
+              },
+              "projects": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "pno": {
+                        "type": "integer"
+                      },
+                      "hours": {
+                        "type": "number",
+                        "maximum": 40
+                      }
+                    },
+                    "required": [
+                      "pno",
+                      "hours"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "pno": {
+                        "type": "integer"
+                      },
+                      "hours": {
+                        "type": "number",
+                        "maximum": 40
+                      }
+                    },
+                    "required": [
+                      "pno",
+                      "hours"
+                    ]
+                  }
+                ]
+              }
+            },
+            "required": [
+              "ssn",
+              "worksFor",
+              "supervisor",
+              "fname",
+              "minit",
+              "lname",
+              "dob",
+              "address",
+              "sex",
+              "salary",
+              "projects"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "ssn": {
+                "type": "string",
+                "pattern": "^[0-9]{9}$"
+              },
+              "worksFor": {
+                "type": "integer"
+              },
+              "manages": {
+                "type": "integer"
+              },
+              "fname": {
+                "type": "string"
+              },
+              "minit": {
+                "type": "string"
+              },
+              "lname": {
+                "type": "string"
+              },
+              "dob": {
+                "type": "string",
+                "pattern": "^(0[1-9]|[1-2][0-9]|3[0-1])-([a-zA-Z]{3}|1[0-2])-(19|20)[0-9][0-9]$"
+              },
+              "address": {
+                "type": "string"
+              },
+              "sex": {
+                "type": "string",
+                "enum":["M", "F"]
+              },
+              "salary": {
+                "type": "integer"
+              },
+              "supervisees": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "string"
+                  }
+                ]
+              },
+              "projects": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "pno": {
+                        "type": "integer"
+                      },
+                      "hours": {
+                        "type": "number",
+                        "maximum": 40
+                      }
+                    },
+                    "required": [
+                      "pno",
+                      "hours"
+                    ]
+                  }
+                ]
+              }
+            },
+            "required": [
+              "ssn",
+              "worksFor",
+              "manages",
+              "fname",
+              "minit",
+              "lname",
+              "dob",
+              "address",
+              "sex",
+              "salary",
+              "supervisees",
+              "projects"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "ssn": {
+                "type": "string",
+                "pattern": "^[0-9]{9}$"
+              },
+              "worksFor": {
+                "type": "integer"
+              },
+              "manages": {
+                "type": "integer"
+              },
+              "fname": {
+                "type": "string"
+              },
+              "minit": {
+                "type": "string"
+              },
+              "lname": {
+                "type": "string"
+              },
+              "dob": {
+                "type": "string",
+                "pattern": "^(0[1-9]|[1-2][0-9]|3[0-1])-([a-zA-Z]{3}|1[0-2])-(19|20)[0-9][0-9]$"
+              },
+              "address": {
+                "type": "string"
+              },
+              "sex": {
+                "type": "string",
+                "enum": ["M", "F"]
+              },
+              "salary": {
+                "type": "integer"
+              },
+              "dependents": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "dependentName": {
+                        "type": "string"
+                      },
+                      "sex": {
+                        "type": "string",
+                        "enum": ["M", "F"]
+                      },
+                      "dob": {
+                        "type": "string",
+                        "pattern": "^(0[1-9]|[1-2][0-9]|3[0-1])-([a-zA-Z]{3}|1[0-2])-(19|20)[0-9][0-9]$"
+                      },
+                      "relationship": {
+                        "type": "string",
+                        "enum":["Son", "Daughter", "Spouse"]
+                      }
+                    },
+                    "required": [
+                      "dependentName",
+                      "sex",
+                      "dob",
+                      "relationship"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "dependentName": {
+                        "type": "string"
+                      },
+                      "sex": {
+                        "type": "string",
+                        "enum":["M", "F"]
+                      },
+                      "dob": {
+                        "type": "string",
+                        "pattern": "^(0[1-9]|[1-2][0-9]|3[0-1])-([a-zA-Z]{3}|1[0-2])-(19|20)[0-9][0-9]$"
+                      },
+                      "relationship": {
+                        "type": "string",
+                        "enum":["Son", "Daughter", "Spouse"]
+                      }
+                    },
+                    "required": [
+                      "dependentName",
+                      "sex",
+                      "dob",
+                      "relationship"
+                    ]
+                  }
+                ]
+              },
+              "supervisees": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "string"
+                  }
+                ]
+              },
+              "projects": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "pno": {
+                        "type": "integer"
+                      },
+                      "hours": {
+                        "type": "number",
+                        "maximum": 40
+                      }
+                    },
+                    "required": [
+                      "pno",
+                      "hours"
+                    ]
+                  }
+                ]
+              }
+            },
+            "required": [
+              "ssn",
+              "worksFor",
+              "manages",
+              "fname",
+              "minit",
+              "lname",
+              "dob",
+              "address",
+              "sex",
+              "salary",
+              "dependents",
+              "supervisees",
+              "projects"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "ssn": {
+                "type": "string",
+                "pattern":"^[0-9]{9}$"
+              },
+              "worksFor": {
+                "type": "integer"
+              },
+              "manages": {
+                "type": "integer"
+              },
+              "fname": {
+                "type": "string"
+              },
+              "minit": {
+                "type": "string"
+              },
+              "lname": {
+                "type": "string"
+              },
+              "dob": {
+                "type": "string",
+                "pattern": "^(0[1-9]|[1-2][0-9]|3[0-1])-([a-zA-Z]{3}|1[0-2])-(19|20)[0-9][0-9]$"
+              },
+              "address": {
+                "type": "string"
+              },
+              "sex": {
+                "type": "string",
+                "enum":["M", "F"]
+              },
+              "salary": {
+                "type": "integer"
+              },
+              "supervisees": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "string"
+                  }
+                ]
+              },
+              "projects": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "pno": {
+                        "type": "integer"
+                      },
+                      "hours": {
+                        "type": "number",
+                        "maximum": 40
+                      }
+                    },
+                    "required": [
+                      "pno",
+                      "hours"
+                    ]
+                  }
+                ]
+              }
+            },
+            "required": [
+              "ssn",
+              "worksFor",
+              "manages",
+              "fname",
+              "minit",
+              "lname",
+              "dob",
+              "address",
+              "sex",
+              "salary",
+              "supervisees",
+              "projects"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "ssn": {
+                "type": "string",
+                "pattern": "^[0-9]{9}$"
+              },
+              "worksFor": {
+                "type": "integer"
+              },
+              "supervisor": {
+                "type": "string"
+              },
+              "fname": {
+                "type": "string"
+              },
+              "minit": {
+                "type": "string"
+              },
+              "lname": {
+                "type": "string"
+              },
+              "dob": {
+                "type": "string",
+                "pattern": "^(0[1-9]|[1-2][0-9]|3[0-1])-([a-zA-Z]{3}|1[0-2])-(19|20)[0-9][0-9]$"
+              },
+              "address": {
+                "type": "string"
+              },
+              "sex": {
+                "type": "string",
+                "enum":["M", "F"]
+              },
+              "salary": {
+                "type": "integer"
+              },
+              "projects": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "pno": {
+                        "type": "integer"
+                      },
+                      "hours": {
+                        "type": "number",
+                        "maximum": 40
+                      }
+                    },
+                    "required": [
+                      "pno",
+                      "hours"
+                    ]
+                  }
+                ]
+              }
+            },
+            "required": [
+              "ssn",
+              "worksFor",
+              "supervisor",
+              "fname",
+              "minit",
+              "lname",
+              "dob",
+              "address",
+              "sex",
+              "salary",
+              "projects"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "ssn": {
+                "type": "string",
+                "pattern": "^[0-9]{9}$"
+              },
+              "worksFor": {
+                "type": "integer"
+              },
+              "supervisor": {
+                "type": "string"
+              },
+              "fname": {
+                "type": "string"
+              },
+              "lname": {
+                "type": "string"
+              },
+              "dob": {
+                "type": "string",
+                "pattern": "^(0[1-9]|[1-2][0-9]|3[0-1])-([a-zA-Z]{3}|1[0-2])-(19|20)[0-9][0-9]$"
+              },
+              "address": {
+                "type": "string"
+              },
+              "sex": {
+                "type": "string",
+                "enum":["M", "F"]
+              },
+              "salary": {
+                "type": "integer"
+              },
+              "projects": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "pno": {
+                        "type": "integer"
+                      },
+                      "hours": {
+                        "type": "number",
+                        "maximum": 40
+                      }
+                    },
+                    "required": [
+                      "pno",
+                      "hours"
+                    ]
+                  }
+                ]
+              }
+            },
+            "required": [
+              "ssn",
+              "worksFor",
+              "supervisor",
+              "fname",
+              "lname",
+              "dob",
+              "address",
+              "sex",
+              "salary",
+              "projects"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "ssn": {
+                "type": "string",
+                "pattern": "^[0-9]{9}$"
+              },
+              "worksFor": {
+                "type": "integer"
+              },
+              "supervisor": {
+                "type": "string"
+              },
+              "fname": {
+                "type": "string"
+              },
+              "minit": {
+                "type": "string"
+              },
+              "lname": {
+                "type": "string"
+              },
+              "dob": {
+                "type": "string",
+                "pattern": "^(0[1-9]|[1-2][0-9]|3[0-1])-([a-zA-Z]{3}|1[0-2])-(19|20)[0-9][0-9]$"
+              },
+              "address": {
+                "type": "string"
+              },
+              "sex": {
+                "type": "string",
+                "enum": ["M", "F"]
+              },
+              "salary": {
+                "type": "integer"
+              },
+              "projects": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "pno": {
+                        "type": "integer"
+                      },
+                      "hours": {
+                        "type": "number",
+                        "maximum": 40
+                      }
+                    },
+                    "required": [
+                      "pno",
+                      "hours"
+                    ]
+                  }
+                ]
+              }
+            },
+            "required": [
+              "ssn",
+              "worksFor",
+              "supervisor",
+              "fname",
+              "minit",
+              "lname",
+              "dob",
+              "address",
+              "sex",
+              "salary",
+              "projects"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "ssn": {
+                "type": "string",
+                "pattern": "^[0-9]{9}$"
+              },
+              "worksFor": {
+                "type": "integer"
+              },
+              "fname": {
+                "type": "string"
+              },
+              "minit": {
+                "type": "string"
+              },
+              "lname": {
+                "type": "string"
+              },
+              "dob": {
+                "type": "string",
+                "pattern": "^(0[1-9]|[1-2][0-9]|3[0-1])-([a-zA-Z]{3}|1[0-2])-(19|20)[0-9][0-9]$"
+              },
+              "address": {
+                "type": "string"
+              },
+              "sex": {
+                "type": "string",
+                "enum": ["M", "F"]
+              },
+              "salary": {
+                "type": "integer"
+              },
+              "supervisees": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "string"
+                  }
+                ]
+              },
+              "projects": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "pno": {
+                        "type": "integer"
+                      },
+                      "hours": {
+                        "type": "number",
+                        "maximum": 40
+                      }
+                    },
+                    "required": [
+                      "pno",
+                      "hours"
+                    ]
+                  }
+                ]
+              }
+            },
+            "required": [
+              "ssn",
+              "worksFor",
+              "fname",
+              "minit",
+              "lname",
+              "dob",
+              "address",
+              "sex",
+              "salary",
+              "supervisees",
+              "projects"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "ssn": {
+                "type": "string",
+                "pattern": "^[0-9]{9}$"
+              },
+              "worksFor": {
+                "type": "integer"
+              },
+              "supervisor": {
+                "type": "string"
+              },
+              "fname": {
+                "type": "string"
+              },
+              "minit": {
+                "type": "string"
+              },
+              "lname": {
+                "type": "string"
+              },
+              "dob": {
+                "type": "string",
+                "pattern": "^(0[1-9]|[1-2][0-9]|3[0-1])-([a-zA-Z]{3}|1[0-2])-(19|20)[0-9][0-9]$"
+              },
+              "address": {
+                "type": "string"
+              },
+              "sex": {
+                "type": "string",
+                "enum": ["M", "F"]
+              },
+              "salary": {
+                "type": "integer"
+              },
+              "supervisees": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "string"
+                  }
+                ]
+              },
+              "projects": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "pno": {
+                        "type": "integer"
+                      },
+                      "hours": {
+                        "type": "number",
+                        "maximum": 40
+                      }
+                    },
+                    "required": [
+                      "pno",
+                      "hours"
+                    ]
+                  }
+                ]
+              }
+            },
+            "required": [
+              "ssn",
+              "worksFor",
+              "supervisor",
+              "fname",
+              "minit",
+              "lname",
+              "dob",
+              "address",
+              "sex",
+              "salary",
+              "supervisees",
+              "projects"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "ssn": {
+                "type": "string",
+                "pattern": "^[0-9]{9}$"
+              },
+              "worksFor": {
+                "type": "integer"
+              },
+              "supervisor": {
+                "type": "string"
+              },
+              "fname": {
+                "type": "string"
+              },
+              "minit": {
+                "type": "string"
+              },
+              "lname": {
+                "type": "string"
+              },
+              "dob": {
+                "type": "string",
+                "pattern": "^(0[1-9]|[1-2][0-9]|3[0-1])-([a-zA-Z]{3}|1[0-2])-(19|20)[0-9][0-9]$"
+              },
+              "address": {
+                "type": "string"
+              },
+              "sex": {
+                "type": "string",
+                "enum": ["M", "F"]
+              },
+              "salary": {
+                "type": "integer"
+              },
+              "projects": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "pno": {
+                        "type": "integer"
+                      },
+                      "hours": {
+                        "type": "number",
+                        "maximum": 40
+                      }
+                    },
+                    "required": [
+                      "pno",
+                      "hours"
+                    ]
+                  }
+                ]
+              }
+            },
+            "required": [
+              "ssn",
+              "worksFor",
+              "supervisor",
+              "fname",
+              "minit",
+              "lname",
+              "dob",
+              "address",
+              "sex",
+              "salary",
+              "projects"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "ssn": {
+                "type": "string",
+                "pattern": "^[0-9]{9}$"
+              },
+              "worksFor": {
+                "type": "integer"
+              },
+              "supervisor": {
+                "type": "string"
+              },
+              "fname": {
+                "type": "string"
+              },
+              "minit": {
+                "type": "string"
+              },
+              "lname": {
+                "type": "string"
+              },
+              "dob": {
+                "type": "string",
+                "pattern": "^(0[1-9]|[1-2][0-9]|3[0-1])-([a-zA-Z]{3}|1[0-2])-(19|20)[0-9][0-9]$"
+              },
+              "address": {
+                "type": "string"
+              },
+              "sex": {
+                "type": "string"
+              },
+              "salary": {
+                "type": "integer"
+              },
+              "projects": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "pno": {
+                        "type": "integer"
+                      },
+                      "hours": {
+                        "type": "number",
+                        "maximum": 40
+                      }
+                    },
+                    "required": [
+                      "pno",
+                      "hours"
+                    ]
+                  }
+                ]
+              }
+            },
+            "required": [
+              "ssn",
+              "worksFor",
+              "supervisor",
+              "fname",
+              "minit",
+              "lname",
+              "dob",
+              "address",
+              "sex",
+              "salary",
+              "projects"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "ssn": {
+                "type": "string"
+              },
+              "worksFor": {
+                "type": "integer"
+              },
+              "supervisor": {
+                "type": "string"
+              },
+              "fname": {
+                "type": "string"
+              },
+              "minit": {
+                "type": "string"
+              },
+              "lname": {
+                "type": "string"
+              },
+              "dob": {
+                "type": "string",
+                "pattern": "^(0[1-9]|[1-2][0-9]|3[0-1])-([a-zA-Z]{3}|1[0-2])-(19|20)[0-9][0-9]$"
+              },
+              "address": {
+                "type": "string"
+              },
+              "sex": {
+                "type": "string"
+              },
+              "salary": {
+                "type": "integer"
+              },
+              "projects": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "pno": {
+                        "type": "integer"
+                      },
+                      "hours": {
+                        "type": "number",
+                        "maximum": 40
+                      }
+                    },
+                    "required": [
+                      "pno",
+                      "hours"
+                    ]
+                  }
+                ]
+              }
+            },
+            "required": [
+              "ssn",
+              "worksFor",
+              "supervisor",
+              "fname",
+              "minit",
+              "lname",
+              "dob",
+              "address",
+              "sex",
+              "salary",
+              "projects"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "ssn": {
+                "type": "string"
+              },
+              "worksFor": {
+                "type": "integer"
+              },
+              "supervisor": {
+                "type": "string"
+              },
+              "fname": {
+                "type": "string"
+              },
+              "minit": {
+                "type": "string"
+              },
+              "lname": {
+                "type": "string"
+              },
+              "dob": {
+                "type": "string",
+                "pattern": "^(0[1-9]|[1-2][0-9]|3[0-1])-([a-zA-Z]{3}|1[0-2])-(19|20)[0-9][0-9]$"
+              },
+              "address": {
+                "type": "string"
+              },
+              "sex": {
+                "type": "string",
+                "enum": ["M", "F"]
+              },
+              "salary": {
+                "type": "integer"
+              },
+              "projects": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "pno": {
+                        "type": "integer"
+                      },
+                      "hours": {
+                        "type": "number"
+                      }
+                    },
+                    "required": [
+                      "pno",
+                      "hours"
+                    ]
+                  }
+                ]
+              }
+            },
+            "required": [
+              "ssn",
+              "worksFor",
+              "supervisor",
+              "fname",
+              "minit",
+              "lname",
+              "dob",
+              "address",
+              "sex",
+              "salary",
+              "projects"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "ssn": {
+                "type": "string",
+                "pattern": "^[0-9]{9}$"
+              },
+              "worksFor": {
+                "type": "integer"
+              },
+              "fname": {
+                "type": "string"
+              },
+              "minit": {
+                "type": "string"
+              },
+              "lname": {
+                "type": "string"
+              },
+              "dob": {
+                "type": "string",
+                "pattern": "^(0[1-9]|[1-2][0-9]|3[0-1])-([a-zA-Z]{3}|1[0-2])-(19|20)[0-9][0-9]$"
+              },
+              "address": {
+                "type": "string"
+              },
+              "sex": {
+                "type": "string",
+                "enum": ["M", "F"]
+              },
+              "salary": {
+                "type": "integer"
+              },
+              "projects": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "pno": {
+                        "type": "integer"
+                      },
+                      "hours": {
+                        "type": "number",
+                        "maximum": 40
+                      }
+                    },
+                    "required": [
+                      "pno",
+                      "hours"
+                    ]
+                  }
+                ]
+              }
+            },
+            "required": [
+              "ssn",
+              "worksFor",
+              "fname",
+              "minit",
+              "lname",
+              "dob",
+              "address",
+              "sex",
+              "salary",
+              "projects"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "ssn": {
+                "type": "string",
+                "pattern": "^[0-9]{9}$"
+              },
+              "worksFor": {
+                "type": "integer"
+              },
+              "supervisor": {
+                "type": "string"
+              },
+              "fname": {
+                "type": "string"
+              },
+              "minit": {
+                "type": "string"
+              },
+              "lname": {
+                "type": "string"
+              },
+              "dob": {
+                "type": "string",
+                "pattern": "^(0[1-9]|[1-2][0-9]|3[0-1])-([a-zA-Z]{3}|1[0-2])-(19|20)[0-9][0-9]$"
+              },
+              "address": {
+                "type": "string"
+              },
+              "sex": {
+                "type": "string",
+                "enum": ["M", "F"]
+              },
+              "salary": {
+                "type": "integer"
+              },
+              "projects": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "pno": {
+                        "type": "integer"
+                      },
+                      "hours": {
+                        "type": "number",
+                        "maximum": 40
+                      }
+                    },
+                    "required": [
+                      "pno",
+                      "hours"
+                    ]
+                  }
+                ]
+              }
+            },
+            "required": [
+              "ssn",
+              "worksFor",
+              "supervisor",
+              "fname",
+              "minit",
+              "lname",
+              "dob",
+              "address",
+              "sex",
+              "salary",
+              "projects"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "ssn": {
+                "type": "string",
+                "pattern": "^[0-9]{9}$"
+              },
+              "worksFor": {
+                "type": "integer"
+              },
+              "supervisor": {
+                "type": "string"
+              },
+              "fname": {
+                "type": "string"
+              },
+              "minit": {
+                "type": "string"
+              },
+              "lname": {
+                "type": "string"
+              },
+              "dob": {
+                "type": "string",
+                "pattern": "^(0[1-9]|[1-2][0-9]|3[0-1])-([a-zA-Z]{3}|1[0-2])-(19|20)[0-9][0-9]$"
+              },
+              "address": {
+                "type": "string"
+              },
+              "sex": {
+                "type": "string",
+                "enum": ["M", "F"]
+              },
+              "salary": {
+                "type": "integer"
+              },
+              "dependents": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "dependentName": {
+                        "type": "string"
+                      },
+                      "sex": {
+                        "type": "string",
+                        "enum": ["M", "F"]
+                      },
+                      "dob": {
+                        "type": "string",
+                        "pattern": "^(0[1-9]|[1-2][0-9]|3[0-1])-([a-zA-Z]{3}|1[0-2])-(19|20)[0-9][0-9]$"
+                      },
+                      "relationship": {
+                        "type": "string",
+                        "enum":["Son", "Daughter", "Spouse"]
+                      }
+                    },
+                    "required": [
+                      "dependentName",
+                      "sex",
+                      "dob",
+                      "relationship"
+                    ]
+                  }
+                ]
+              },
+              "projects": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "pno": {
+                        "type": "integer"
+                      },
+                      "hours": {
+                        "type": "number",
+                        "maximum": 40
+                      }
+                    },
+                    "required": [
+                      "pno",
+                      "hours"
+                    ]
+                  }
+                ]
+              }
+            },
+            "required": [
+              "ssn",
+              "worksFor",
+              "supervisor",
+              "fname",
+              "minit",
+              "lname",
+              "dob",
+              "address",
+              "sex",
+              "salary",
+              "dependents",
+              "projects"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "ssn": {
+                "type": "string",
+                "pattern": "^[0-9]{9}$"
+              },
+              "worksFor": {
+                "type": "integer"
+              },
+              "supervisor": {
+                "type": "string"
+              },
+              "fname": {
+                "type": "string"
+              },
+              "minit": {
+                "type": "string"
+              },
+              "lname": {
+                "type": "string"
+              },
+              "dob": {
+                "type": "string",
+                "pattern": "^(0[1-9]|[1-2][0-9]|3[0-1])-([a-zA-Z]{3}|1[0-2])-(19|20)[0-9][0-9]$"
+              },
+              "address": {
+                "type": "string"
+              },
+              "sex": {
+                "type": "string",
+                "enum": ["M", "F"]
+              },
+              "salary": {
+                "type": "integer"
+              },
+              "dependents": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "dependentName": {
+                        "type": "string"
+                      },
+                      "sex": {
+                        "type": "string",
+                        "enum": ["M", "F"]
+                      },
+                      "dob": {
+                        "type": "string",
+                        "pattern": "^(0[1-9]|[1-2][0-9]|3[0-1])-([a-zA-Z]{3}|1[0-2])-(19|20)[0-9][0-9]$"
+                      },
+                      "relationship": {
+                        "type": "string",
+                        "enum": ["Son", "Daughter", "Spouse"]
+                      }
+                    },
+                    "required": [
+                      "dependentName",
+                      "sex",
+                      "dob",
+                      "relationship"
+                    ]
+                  }
+                ]
+              },
+              "projects": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "pno": {
+                        "type": "integer"
+                      },
+                      "hours": {
+                        "type": "number",
+                        "maximum": 40
+                      }
+                    },
+                    "required": [
+                      "pno",
+                      "hours"
+                    ]
+                  }
+                ]
+              }
+            },
+            "required": [
+              "ssn",
+              "worksFor",
+              "supervisor",
+              "fname",
+              "minit",
+              "lname",
+              "dob",
+              "address",
+              "sex",
+              "salary",
+              "dependents",
+              "projects"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "ssn": {
+                "type": "string",
+                "pattern": "^[0-9]{9}$"
+              },
+              "worksFor": {
+                "type": "integer"
+              },
+              "supervisor": {
+                "type": "string"
+              },
+              "fname": {
+                "type": "string"
+              },
+              "minit": {
+                "type": "string"
+              },
+              "lname": {
+                "type": "string"
+              },
+              "dob": {
+                "type": "string",
+                "pattern": "^(0[1-9]|[1-2][0-9]|3[0-1])-([a-zA-Z]{3}|1[0-2])-(19|20)[0-9][0-9]$"
+              },
+              "address": {
+                "type": "string"
+              },
+              "sex": {
+                "type": "string",
+                "enum": ["M", "F"]
+              },
+              "salary": {
+                "type": "integer"
+              },
+              "projects": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "pno": {
+                        "type": "integer"
+                      },
+                      "hours": {
+                        "type": "number",
+                        "maximum": 40
+                      }
+                    },
+                    "required": [
+                      "pno",
+                      "hours"
+                    ]
+                  }
+                ]
+              }
+            },
+            "required": [
+              "ssn",
+              "worksFor",
+              "supervisor",
+              "fname",
+              "minit",
+              "lname",
+              "dob",
+              "address",
+              "sex",
+              "salary",
+              "projects"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "ssn": {
+                "type": "string",
+                "pattern": "^[0-9]{9}$"
+              },
+              "worksFor": {
+                "type": "integer"
+              },
+              "supervisor": {
+                "type": "string"
+              },
+              "fname": {
+                "type": "string"
+              },
+              "minit": {
+                "type": "string"
+              },
+              "lname": {
+                "type": "string"
+              },
+              "dob": {
+                "type": "string",
+                "pattern": "^(0[1-9]|[1-2][0-9]|3[0-1])-([a-zA-Z]{3}|1[0-2])-(19|20)[0-9][0-9]$"
+              },
+              "address": {
+                "type": "string"
+              },
+              "sex": {
+                "type": "string",
+                "enum": ["M", "F"]
+              },
+              "salary": {
+                "type": "integer"
+              },
+              "projects": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "pno": {
+                        "type": "integer"
+                      },
+                      "hours": {
+                        "type": "number",
+                        "maximum": 40
+                      }
+                    },
+                    "required": [
+                      "pno",
+                      "hours"
+                    ]
+                  }
+                ]
+              }
+            },
+            "required": [
+              "ssn",
+              "worksFor",
+              "supervisor",
+              "fname",
+              "minit",
+              "lname",
+              "dob",
+              "address",
+              "sex",
+              "salary",
+              "projects"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "ssn": {
+                "type": "string",
+                "pattern": "^[0-9]{9}$"
+              },
+              "worksFor": {
+                "type": "integer"
+              },
+              "fname": {
+                "type": "string"
+              },
+              "minit": {
+                "type": "string"
+              },
+              "lname": {
+                "type": "string"
+              },
+              "dob": {
+                "type": "string",
+                "pattern": "^(0[1-9]|[1-2][0-9]|3[0-1])-([a-zA-Z]{3}|1[0-2])-(19|20)[0-9][0-9]$"
+              },
+              "address": {
+                "type": "string"
+              },
+              "sex": {
+                "type": "string",
+                "enum": ["M", "F"]
+              },
+              "salary": {
+                "type": "integer"
+              },
+              "supervisees": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "string"
+                  }
+                ]
+              }
+            },
+            "required": [
+              "ssn",
+              "worksFor",
+              "fname",
+              "minit",
+              "lname",
+              "dob",
+              "address",
+              "sex",
+              "salary",
+              "supervisees"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "ssn": {
+                "type": "string",
+                "pattern": "^[0-9]{9}$"
+              },
+              "worksFor": {
+                "type": "integer"
+              },
+              "supervisor": {
+                "type": "string"
+              },
+              "fname": {
+                "type": "string"
+              },
+              "minit": {
+                "type": "string"
+              },
+              "lname": {
+                "type": "string"
+              },
+              "dob": {
+                "type": "string",
+                "pattern": "^(0[1-9]|[1-2][0-9]|3[0-1])-([a-zA-Z]{3}|1[0-2])-(19|20)[0-9][0-9]$"
+              },
+              "address": {
+                "type": "string"
+              },
+              "sex": {
+                "type": "string",
+                "enum": ["M", "F"]
+              },
+              "salary": {
+                "type": "integer"
+              },
+              "supervisees": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "string"
+                  }
+                ]
+              },
+              "projects": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "pno": {
+                        "type": "integer"
+                      },
+                      "hours": {
+                        "type": "number",
+                        "maximum": 40
+                      }
+                    },
+                    "required": [
+                      "pno",
+                      "hours"
+                    ]
+                  }
+                ]
+              }
+            },
+            "required": [
+              "ssn",
+              "worksFor",
+              "supervisor",
+              "fname",
+              "minit",
+              "lname",
+              "dob",
+              "address",
+              "sex",
+              "salary",
+              "supervisees",
+              "projects"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "ssn": {
+                "type": "string",
+                "pattern": "^[0-9]{9}$"
+              },
+              "worksFor": {
+                "type": "integer"
+              },
+              "supervisor": {
+                "type": "string"
+              },
+              "fname": {
+                "type": "string"
+              },
+              "minit": {
+                "type": "string"
+              },
+              "lname": {
+                "type": "string"
+              },
+              "dob": {
+                "type": "string",
+                "pattern": "^(0[1-9]|[1-2][0-9]|3[0-1])-([a-zA-Z]{3}|1[0-2])-(19|20)[0-9][0-9]$"
+              },
+              "address": {
+                "type": "string"
+              },
+              "sex": {
+                "type": "string",
+                "enum": ["M", "F"]
+              },
+              "salary": {
+                "type": "integer"
+              },
+              "supervisees": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "string"
+                  }
+                ]
+              }
+            },
+            "required": [
+              "ssn",
+              "worksFor",
+              "supervisor",
+              "fname",
+              "minit",
+              "lname",
+              "dob",
+              "address",
+              "sex",
+              "salary",
+              "supervisees"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "ssn": {
+                "type": "string",
+                "pattern": "^[0-9]{9}$"
+              },
+              "worksFor": {
+                "type": "integer"
+              },
+              "supervisor": {
+                "type": "string"
+              },
+              "fname": {
+                "type": "string"
+              },
+              "minit": {
+                "type": "string"
+              },
+              "lname": {
+                "type": "string"
+              },
+              "dob": {
+                "type": "string",
+                "pattern": "^(0[1-9]|[1-2][0-9]|3[0-1])-([a-zA-Z]{3}|1[0-2])-(19|20)[0-9][0-9]$"
+              },
+              "address": {
+                "type": "string"
+              },
+              "sex": {
+                "type": "string",
+                "enum": ["M", "F"]
+              },
+              "salary": {
+                "type": "integer"
+              },
+              "supervisees": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "string"
+                  }
+                ]
+              },
+              "projects": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "pno": {
+                        "type": "integer"
+                      },
+                      "hours": {
+                        "type": "number",
+                        "maximum": 40
+                      }
+                    },
+                    "required": [
+                      "pno",
+                      "hours"
+                    ]
+                  }
+                ]
+              }
+            },
+            "required": [
+              "ssn",
+              "worksFor",
+              "supervisor",
+              "fname",
+              "minit",
+              "lname",
+              "dob",
+              "address",
+              "sex",
+              "salary",
+              "supervisees",
+              "projects"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "ssn": {
+                "type": "string",
+                "pattern": "^[0-9]{9}$"
+              },
+              "worksFor": {
+                "type": "integer"
+              },
+              "supervisor": {
+                "type": "string"
+              },
+              "fname": {
+                "type": "string"
+              },
+              "minit": {
+                "type": "string"
+              },
+              "lname": {
+                "type": "string"
+              },
+              "dob": {
+                "type": "string",
+                "pattern": "^(0[1-9]|[1-2][0-9]|3[0-1])-([a-zA-Z]{3}|1[0-2])-(19|20)[0-9][0-9]$"
+              },
+              "address": {
+                "type": "string"
+              },
+              "sex": {
+                "type": "string",
+                "enum": ["M", "F"]
+              },
+              "salary": {
+                "type": "integer"
+              },
+              "supervisees": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "string"
+                  }
+                ]
+              },
+              "projects": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "pno": {
+                        "type": "integer"
+                      },
+                      "hours": {
+                        "type": "number",
+                        "maximum": 40
+                      }
+                    },
+                    "required": [
+                      "pno",
+                      "hours"
+                    ]
+                  }
+                ]
+              }
+            },
+            "required": [
+              "ssn",
+              "worksFor",
+              "supervisor",
+              "fname",
+              "minit",
+              "lname",
+              "dob",
+              "address",
+              "sex",
+              "salary",
+              "supervisees",
+              "projects"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "ssn": {
+                "type": "string",
+                "pattern": "^[0-9]{9}$"
+              },
+              "worksFor": {
+                "type": "integer"
+              },
+              "supervisor": {
+                "type": "string"
+              },
+              "fname": {
+                "type": "string"
+              },
+              "minit": {
+                "type": "string"
+              },
+              "lname": {
+                "type": "string"
+              },
+              "dob": {
+                "type": "string",
+                "pattern": "^(0[1-9]|[1-2][0-9]|3[0-1])-([a-zA-Z]{3}|1[0-2])-(19|20)[0-9][0-9]$"
+              },
+              "address": {
+                "type": "string"
+              },
+              "sex": {
+                "type": "string",
+                "enum": ["M", "F"]
+              },
+              "salary": {
+                "type": "integer"
+              },
+              "projects": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "pno": {
+                        "type": "integer"
+                      },
+                      "hours": {
+                        "type": "number",
+                        "maximum": 40
+                      }
+                    },
+                    "required": [
+                      "pno",
+                      "hours"
+                    ]
+                  }
+                ]
+              }
+            },
+            "required": [
+              "ssn",
+              "worksFor",
+              "supervisor",
+              "fname",
+              "minit",
+              "lname",
+              "dob",
+              "address",
+              "sex",
+              "salary",
+              "projects"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "ssn": {
+                "type": "string",
+                "pattern": "^[0-9]{9}$"
+              },
+              "worksFor": {
+                "type": "integer"
+              },
+              "supervisor": {
+                "type": "string"
+              },
+              "fname": {
+                "type": "string"
+              },
+              "minit": {
+                "type": "string"
+              },
+              "lname": {
+                "type": "string"
+              },
+              "dob": {
+                "type": "string",
+                "pattern": "^(0[1-9]|[1-2][0-9]|3[0-1])-([a-zA-Z]{3}|1[0-2])-(19|20)[0-9][0-9]$"
+              },
+              "address": {
+                "type": "string"
+              },
+              "sex": {
+                "type": "string",
+                "enum": ["M", "F"]
+              },
+              "salary": {
+                "type": "integer"
+              },
+              "projects": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "pno": {
+                        "type": "integer"
+                      },
+                      "hours": {
+                        "type": "number",
+                        "maximum": 40
+
+                      }
+                    },
+                    "required": [
+                      "pno",
+                      "hours"
+                    ]
+                  }
+                ]
+              }
+            },
+            "required": [
+              "ssn",
+              "worksFor",
+              "supervisor",
+              "fname",
+              "minit",
+              "lname",
+              "dob",
+              "address",
+              "sex",
+              "salary",
+              "projects"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "ssn": {
+                "type": "string",
+                "pattern": "^[0-9]{9}$"
+              },
+              "worksFor": {
+                "type": "integer"
+              },
+              "supervisor": {
+                "type": "string"
+              },
+              "fname": {
+                "type": "string"
+              },
+              "minit": {
+                "type": "string"
+              },
+              "lname": {
+                "type": "string"
+              },
+              "dob": {
+                "type": "string",
+                "pattern": "^(0[1-9]|[1-2][0-9]|3[0-1])-([a-zA-Z]{3}|1[0-2])-(19|20)[0-9][0-9]$"
+              },
+              "address": {
+                "type": "string"
+              },
+              "sex": {
+                "type": "string",
+                "enum": ["M", "F"]
+              },
+              "salary": {
+                "type": "integer"
+              },
+              "supervisees": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "string"
+                  }
+                ]
+              },
+              "projects": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "pno": {
+                        "type": "integer"
+                      },
+                      "hours": {
+                        "type": "number",
+                        "maximum": 40
+                      }
+                    },
+                    "required": [
+                      "pno",
+                      "hours"
+                    ]
+                  }
+                ]
+              }
+            },
+            "required": [
+              "ssn",
+              "worksFor",
+              "supervisor",
+              "fname",
+              "minit",
+              "lname",
+              "dob",
+              "address",
+              "sex",
+              "salary",
+              "supervisees",
+              "projects"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "ssn": {
+                "type": "string",
+                "pattern": "^[0-9]{9}$"
+              },
+              "worksFor": {
+                "type": "integer"
+              },
+              "supervisor": {
+                "type": "string"
+              },
+              "fname": {
+                "type": "string"
+              },
+              "minit": {
+                "type": "string"
+              },
+              "lname": {
+                "type": "string"
+              },
+              "dob": {
+                "type": "string",
+                "pattern": "^(0[1-9]|[1-2][0-9]|3[0-1])-([a-zA-Z]{3}|1[0-2])-(19|20)[0-9][0-9]$"
+              },
+              "address": {
+                "type": "string"
+              },
+              "sex": {
+                "type": "string",
+                "enum": ["M", "F"]
+              },
+              "salary": {
+                "type": "integer"
+              },
+              "projects": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "pno": {
+                        "type": "integer"
+                      },
+                      "hours": {
+                        "type": "number",
+                        "maximum": 40
+                      }
+                    },
+                    "required": [
+                      "pno",
+                      "hours"
+                    ]
+                  }
+                ]
+              }
+            },
+            "required": [
+              "ssn",
+              "worksFor",
+              "supervisor",
+              "fname",
+              "minit",
+              "lname",
+              "dob",
+              "address",
+              "sex",
+              "salary",
+              "projects"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "ssn": {
+                "type": "string",
+                "pattern": "^[0-9]{9}$"
+              },
+              "worksFor": {
+                "type": "integer"
+              },
+              "supervisor": {
+                "type": "string"
+              },
+              "fname": {
+                "type": "string"
+              },
+              "minit": {
+                "type": "string"
+              },
+              "lname": {
+                "type": "string"
+              },
+              "dob": {
+                "type": "string",
+                "pattern": "^(0[1-9]|[1-2][0-9]|3[0-1])-([a-zA-Z]{3}|1[0-2])-(19|20)[0-9][0-9]$"
+              },
+              "address": {
+                "type": "string"
+              },
+              "sex": {
+                "type": "string",
+                "enum": ["M", "F"]
+              },
+              "salary": {
+                "type": "integer"
+              },
+              "projects": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "pno": {
+                        "type": "integer"
+                      },
+                      "hours": {
+                        "type": "number",
+                        "maximum": 40
+                      }
+                    },
+                    "required": [
+                      "pno",
+                      "hours"
+                    ]
+                  }
+                ]
+              }
+            },
+            "required": [
+              "ssn",
+              "worksFor",
+              "supervisor",
+              "fname",
+              "minit",
+              "lname",
+              "dob",
+              "address",
+              "sex",
+              "salary",
+              "projects"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "ssn": {
+                "type": "string",
+                "pattern": "^[0-9]{9}$"
+              },
+              "worksFor": {
+                "type": "integer"
+              },
+              "supervisor": {
+                "type": "string"
+              },
+              "fname": {
+                "type": "string"
+              },
+              "minit": {
+                "type": "string"
+              },
+              "lname": {
+                "type": "string"
+              },
+              "dob": {
+                "type": "string",
+                "pattern": "^(0[1-9]|[1-2][0-9]|3[0-1])-([a-zA-Z]{3}|1[0-2])-(19|20)[0-9][0-9]$"
+              },
+              "address": {
+                "type": "string"
+              },
+              "sex": {
+                "type": "string",
+                "enum": ["M", "F"]
+              },
+              "salary": {
+                "type": "integer"
+              },
+              "supervisees": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "string"
+                  }
+                ]
+              },
+              "projects": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "pno": {
+                        "type": "integer"
+                      },
+                      "hours": {
+                        "type": "number",
+                        "maximum": 40
+                      }
+                    },
+                    "required": [
+                      "pno",
+                      "hours"
+                    ]
+                  }
+                ]
+              }
+            },
+            "required": [
+              "ssn",
+              "worksFor",
+              "supervisor",
+              "fname",
+              "minit",
+              "lname",
+              "dob",
+              "address",
+              "sex",
+              "salary",
+              "supervisees",
+              "projects"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "ssn": {
+                "type": "string",
+                "pattern": "^[0-9]{9}$"
+              },
+              "worksFor": {
+                "type": "integer"
+              },
+              "supervisor": {
+                "type": "string"
+              },
+              "fname": {
+                "type": "string"
+              },
+              "minit": {
+                "type": "string"
+              },
+              "lname": {
+                "type": "string"
+              },
+              "dob": {
+                "type": "string",
+                "pattern": "^(0[1-9]|[1-2][0-9]|3[0-1])-([a-zA-Z]{3}|1[0-2])-(19|20)[0-9][0-9]$"
+              },
+              "address": {
+                "type": "string"
+              },
+              "sex": {
+                "type": "string",
+                "enum": ["M", "F"]
+              },
+              "salary": {
+                "type": "integer"
+              },
+              "supervisees": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "string"
+                  }
+                ]
+              },
+              "projects": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "pno": {
+                        "type": "integer"
+                      },
+                      "hours": {
+                        "type": "number",
+                        "maximum": 40
+                      }
+                    },
+                    "required": [
+                      "pno",
+                      "hours"
+                    ]
+                  }
+                ]
+              }
+            },
+            "required": [
+              "ssn",
+              "worksFor",
+              "supervisor",
+              "fname",
+              "minit",
+              "lname",
+              "dob",
+              "address",
+              "sex",
+              "salary",
+              "supervisees",
+              "projects"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "ssn": {
+                "type": "string",
+                "pattern": "^[0-9]{9}$"
+              },
+              "worksFor": {
+                "type": "integer"
+              },
+              "supervisor": {
+                "type": "string"
+              },
+              "fname": {
+                "type": "string"
+              },
+              "minit": {
+                "type": "string"
+              },
+              "lname": {
+                "type": "string"
+              },
+              "dob": {
+                "type": "string",
+                "pattern": "^(0[1-9]|[1-2][0-9]|3[0-1])-([a-zA-Z]{3}|1[0-2])-(19|20)[0-9][0-9]$"
+              },
+              "address": {
+                "type": "string"
+              },
+              "sex": {
+                "type": "string",
+                "enum": ["M", "F"]
+              },
+              "salary": {
+                "type": "integer"
+              },
+              "supervisees": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "string"
+                  }
+                ]
+              },
+              "projects": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "pno": {
+                        "type": "integer"
+                      },
+                      "hours": {
+                        "type": "number",
+                        "maximum": 40
+                      }
+                    },
+                    "required": [
+                      "pno",
+                      "hours"
+                    ]
+                  }
+                ]
+              }
+            },
+            "required": [
+              "ssn",
+              "worksFor",
+              "supervisor",
+              "fname",
+              "minit",
+              "lname",
+              "dob",
+              "address",
+              "sex",
+              "salary",
+              "supervisees",
+              "projects"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "ssn": {
+                "type": "string",
+                "pattern": "^[0-9]{9}$"
+              },
+              "worksFor": {
+                "type": "integer"
+              },
+              "supervisor": {
+                "type": "string"
+              },
+              "fname": {
+                "type": "string"
+              },
+              "minit": {
+                "type": "string"
+              },
+              "lname": {
+                "type": "string"
+              },
+              "dob": {
+                "type": "string",
+                "pattern": "^(0[1-9]|[1-2][0-9]|3[0-1])-([a-zA-Z]{3}|1[0-2])-(19|20)[0-9][0-9]$"
+              },
+              "address": {
+                "type": "string"
+              },
+              "sex": {
+                "type": "string",
+                "enum": ["M", "F"]
+              },
+              "salary": {
+                "type": "integer"
+              },
+              "projects": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "pno": {
+                        "type": "integer"
+                      },
+                      "hours": {
+                        "type": "number",
+                        "maximum": 40
+                      }
+                    },
+                    "required": [
+                      "pno",
+                      "hours"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "pno": {
+                        "type": "integer"
+                      },
+                      "hours": {
+                        "type": "number",
+                        "maximum": 40
+                      }
+                    },
+                    "required": [
+                      "pno",
+                      "hours"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "pno": {
+                        "type": "integer"
+                      },
+                      "hours": {
+                        "type": "number",
+                        "maximum": 40
+                      }
+                    },
+                    "required": [
+                      "pno",
+                      "hours"
+                    ]
+                  }
+                ]
+              }
+            },
+            "required": [
+              "ssn",
+              "worksFor",
+              "supervisor",
+              "fname",
+              "minit",
+              "lname",
+              "dob",
+              "address",
+              "sex",
+              "salary",
+              "projects"
+            ]
+          }
+        ]
+      },
+      "projects": {
+        "type": "array",
+        "items": [
+          {
+            "type": "object",
+            "properties": {
+              "pnumber": {
+                "type": "integer"
+              },
+              "controllingDepartment": {
+                "type": "integer"
+              },
+              "pname": {
+                "type": "string"
+              },
+              "plocation": {
+                "type": "string"
+              },
+              "workers": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "essn": {
+                        "type": "string"
+                      },
+                      "hours": {
+                        "type": "number",
+                        "maximum": 40
+                      }
+                    },
+                    "required": [
+                      "essn",
+                      "hours"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "essn": {
+                        "type": "string"
+                      },
+                      "hours": {
+                        "type": "number",
+                        "maximum": 40
+                      }
+                    },
+                    "required": [
+                      "essn",
+                      "hours"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "essn": {
+                        "type": "string"
+                      },
+                      "hours": {
+                        "type": "number",
+                        "maximum": 40
+                      }
+                    },
+                    "required": [
+                      "essn",
+                      "hours"
+                    ]
+                  }
+                ]
+              }
+            },
+            "required": [
+              "pnumber",
+              "controllingDepartment",
+              "pname",
+              "plocation",
+              "workers"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "pnumber": {
+                "type": "integer"
+              },
+              "controllingDepartment": {
+                "type": "integer"
+              },
+              "pname": {
+                "type": "string"
+              },
+              "plocation": {
+                "type": "string"
+              },
+              "workers": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "essn": {
+                        "type": "string"
+                      },
+                      "hours": {
+                        "type": "number",
+                        "maximum": 40
+                      }
+                    },
+                    "required": [
+                      "essn",
+                      "hours"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "essn": {
+                        "type": "string"
+                      },
+                      "hours": {
+                        "type": "number",
+                        "maximum": 40
+                      }
+                    },
+                    "required": [
+                      "essn",
+                      "hours"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "essn": {
+                        "type": "string"
+                      },
+                      "hours": {
+                        "type": "number",
+                        "maximum": 40
+                      }
+                    },
+                    "required": [
+                      "essn",
+                      "hours"
+                    ]
+                  }
+                ]
+              }
+            },
+            "required": [
+              "pnumber",
+              "controllingDepartment",
+              "pname",
+              "plocation",
+              "workers"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "pnumber": {
+                "type": "integer"
+              },
+              "controllingDepartment": {
+                "type": "integer"
+              },
+              "pname": {
+                "type": "string"
+              },
+              "plocation": {
+                "type": "string"
+              },
+              "workers": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "essn": {
+                        "type": "string"
+                      },
+                      "hours": {
+                        "type": "number",
+                        "maximum": 40
+                      }
+                    },
+                    "required": [
+                      "essn",
+                      "hours"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "essn": {
+                        "type": "string"
+                      },
+                      "hours": {
+                        "type": "number",
+                        "maximum": 40
+                      }
+                    },
+                    "required": [
+                      "essn",
+                      "hours"
+                    ]
+                  }
+                ]
+              }
+            },
+            "required": [
+              "pnumber",
+              "controllingDepartment",
+              "pname",
+              "plocation",
+              "workers"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "pnumber": {
+                "type": "integer"
+              },
+              "controllingDepartment": {
+                "type": "integer"
+              },
+              "pname": {
+                "type": "string"
+              },
+              "plocation": {
+                "type": "string"
+              },
+              "workers": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "essn": {
+                        "type": "string"
+                      },
+                      "hours": {
+                        "type": "number",
+                        "maximum": 40
+                      }
+                    },
+                    "required": [
+                      "essn",
+                      "hours"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "essn": {
+                        "type": "string"
+                      },
+                      "hours": {
+                        "type": "number",
+                        "maximum": 40
+                      }
+                    },
+                    "required": [
+                      "essn",
+                      "hours"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "essn": {
+                        "type": "string"
+                      },
+                      "hours": {
+                        "type": "number",
+                        "maximum": 40
+                      }
+                    },
+                    "required": [
+                      "essn",
+                      "hours"
+                    ]
+                  }
+                ]
+              }
+            },
+            "required": [
+              "pnumber",
+              "controllingDepartment",
+              "pname",
+              "plocation",
+              "workers"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "pnumber": {
+                "type": "integer"
+              },
+              "controllingDepartment": {
+                "type": "integer"
+              },
+              "pname": {
+                "type": "string"
+              },
+              "plocation": {
+                "type": "string"
+              },
+              "workers": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "essn": {
+                        "type": "string"
+                      },
+                      "hours": {
+                        "type": "number",
+                        "maximum": 40
+                      }
+                    },
+                    "required": [
+                      "essn",
+                      "hours"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "essn": {
+                        "type": "string"
+                      },
+                      "hours": {
+                        "type": "number",
+                        "maximum": 40
+                      }
+                    },
+                    "required": [
+                      "essn",
+                      "hours"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "essn": {
+                        "type": "string"
+                      },
+                      "hours": {
+                        "type": "number",
+                        "maximum": 40
+                      }
+                    },
+                    "required": [
+                      "essn",
+                      "hours"
+                    ]
+                  }
+                ]
+              }
+            },
+            "required": [
+              "pnumber",
+              "controllingDepartment",
+              "pname",
+              "plocation",
+              "workers"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "pnumber": {
+                "type": "integer"
+              },
+              "controllingDepartment": {
+                "type": "integer"
+              },
+              "pname": {
+                "type": "string"
+              },
+              "plocation": {
+                "type": "string"
+              },
+              "workers": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "essn": {
+                        "type": "string"
+                      },
+                      "hours": {
+                        "type": "number",
+                        "maximum": 40
+                      }
+                    },
+                    "required": [
+                      "essn",
+                      "hours"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "essn": {
+                        "type": "string"
+                      },
+                      "hours": {
+                        "type": "number",
+                        "maximum": 40
+                      }
+                    },
+                    "required": [
+                      "essn",
+                      "hours"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "essn": {
+                        "type": "string"
+                      },
+                      "hours": {
+                        "type": "number",
+                        "maximum": 40
+                      }
+                    },
+                    "required": [
+                      "essn",
+                      "hours"
+                    ]
+                  }
+                ]
+              }
+            },
+            "required": [
+              "pnumber",
+              "controllingDepartment",
+              "pname",
+              "plocation",
+              "workers"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "pnumber": {
+                "type": "integer"
+              },
+              "controllingDepartment": {
+                "type": "integer"
+              },
+              "pname": {
+                "type": "string"
+              },
+              "plocation": {
+                "type": "string"
+              },
+              "workers": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "essn": {
+                        "type": "string"
+                      },
+                      "hours": {
+                        "type": "number",
+                        "maximum": 40
+                      }
+                    },
+                    "required": [
+                      "essn",
+                      "hours"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "essn": {
+                        "type": "string"
+                      },
+                      "hours": {
+                        "type": "number",
+                        "maximum": 40
+                      }
+                    },
+                    "required": [
+                      "essn",
+                      "hours"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "essn": {
+                        "type": "string"
+                      },
+                      "hours": {
+                        "type": "number",
+                        "maximum": 40
+                      }
+                    },
+                    "required": [
+                      "essn",
+                      "hours"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "essn": {
+                        "type": "string"
+                      },
+                      "hours": {
+                        "type": "number",
+                        "maximum": 40
+                      }
+                    },
+                    "required": [
+                      "essn",
+                      "hours"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "essn": {
+                        "type": "string"
+                      },
+                      "hours": {
+                        "type": "number",
+                        "maximum": 40
+                      }
+                    },
+                    "required": [
+                      "essn",
+                      "hours"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "essn": {
+                        "type": "string"
+                      },
+                      "hours": {
+                        "type": "number",
+                        "maximum": 40
+                      }
+                    },
+                    "required": [
+                      "essn",
+                      "hours"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "essn": {
+                        "type": "string"
+                      },
+                      "hours": {
+                        "type": "number",
+                        "maximum": 40
+                      }
+                    },
+                    "required": [
+                      "essn",
+                      "hours"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "essn": {
+                        "type": "string"
+                      },
+                      "hours": {
+                        "type": "number",
+                        "maximum": 40
+                      }
+                    },
+                    "required": [
+                      "essn",
+                      "hours"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "essn": {
+                        "type": "string"
+                      },
+                      "hours": {
+                        "type": "number",
+                        "maximum": 40
+                      }
+                    },
+                    "required": [
+                      "essn",
+                      "hours"
+                    ]
+                  }
+                ]
+              }
+            },
+            "required": [
+              "pnumber",
+              "controllingDepartment",
+              "pname",
+              "plocation",
+              "workers"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "pnumber": {
+                "type": "integer"
+              },
+              "controllingDepartment": {
+                "type": "integer"
+              },
+              "pname": {
+                "type": "string"
+              },
+              "plocation": {
+                "type": "string"
+              },
+              "workers": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "essn": {
+                        "type": "string"
+                      },
+                      "hours": {
+                        "type": "number",
+                        "maximum": 40
+                      }
+                    },
+                    "required": [
+                      "essn",
+                      "hours"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "essn": {
+                        "type": "string"
+                      },
+                      "hours": {
+                        "type": "number",
+                        "maximum": 40
+                      }
+                    },
+                    "required": [
+                      "essn",
+                      "hours"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "essn": {
+                        "type": "string"
+                      },
+                      "hours": {
+                        "type": "number",
+                        "maximum": 40
+                      }
+                    },
+                    "required": [
+                      "essn",
+                      "hours"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "essn": {
+                        "type": "string"
+                      },
+                      "hours": {
+                        "type": "number",
+                        "maximum": 40
+                      }
+                    },
+                    "required": [
+                      "essn",
+                      "hours"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "essn": {
+                        "type": "string"
+                      },
+                      "hours": {
+                        "type": "number",
+                        "maximum": 40
+                      }
+                    },
+                    "required": [
+                      "essn",
+                      "hours"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "essn": {
+                        "type": "string"
+                      },
+                      "hours": {
+                        "type": "number",
+                        "maximum": 40
+                      }
+                    },
+                    "required": [
+                      "essn",
+                      "hours"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "essn": {
+                        "type": "string"
+                      },
+                      "hours": {
+                        "type": "number",
+                        "maximum": 40
+                      }
+                    },
+                    "required": [
+                      "essn",
+                      "hours"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "essn": {
+                        "type": "string"
+                      },
+                      "hours": {
+                        "type": "number",
+                        "maximum": 40
+                      }
+                    },
+                    "required": [
+                      "essn",
+                      "hours"
+                    ]
+                  }
+                ]
+              }
+            },
+            "required": [
+              "pnumber",
+              "controllingDepartment",
+              "pname",
+              "plocation",
+              "workers"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "pnumber": {
+                "type": "integer"
+              },
+              "controllingDepartment": {
+                "type": "integer"
+              },
+              "pname": {
+                "type": "string"
+              },
+              "plocation": {
+                "type": "string"
+              },
+              "workers": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "essn": {
+                        "type": "string"
+                      },
+                      "hours": {
+                        "type": "number",
+                        "maximum": 40
+                      }
+                    },
+                    "required": [
+                      "essn",
+                      "hours"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "essn": {
+                        "type": "string"
+                      },
+                      "hours": {
+                        "type": "number",
+                        "maximum": 40
+                      }
+                    },
+                    "required": [
+                      "essn",
+                      "hours"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "essn": {
+                        "type": "string"
+                      },
+                      "hours": {
+                        "type": "number",
+                        "maximum": 40
+                      }
+                    },
+                    "required": [
+                      "essn",
+                      "hours"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "essn": {
+                        "type": "string"
+                      },
+                      "hours": {
+                        "type": "number",
+                        "maximum": 40
+                      }
+                    },
+                    "required": [
+                      "essn",
+                      "hours"
+                    ]
+                  }
+                ]
+              }
+            },
+            "required": [
+              "pnumber",
+              "controllingDepartment",
+              "pname",
+              "plocation",
+              "workers"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "pnumber": {
+                "type": "integer"
+              },
+              "controllingDepartment": {
+                "type": "integer"
+              },
+              "pname": {
+                "type": "string"
+              },
+              "plocation": {
+                "type": "string"
+              },
+              "workers": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "essn": {
+                        "type": "string"
+                      },
+                      "hours": {
+                        "type": "number",
+                        "maximum": 40
+                      }
+                    },
+                    "required": [
+                      "essn",
+                      "hours"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "essn": {
+                        "type": "string"
+                      },
+                      "hours": {
+                        "type": "number",
+                        "maximum": 40
+                      }
+                    },
+                    "required": [
+                      "essn",
+                      "hours"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "essn": {
+                        "type": "string"
+                      },
+                      "hours": {
+                        "type": "number",
+                        "maximum": 40
+                      }
+                    },
+                    "required": [
+                      "essn",
+                      "hours"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "essn": {
+                        "type": "string"
+                      },
+                      "hours": {
+                        "type": "number",
+                        "maximum": 40
+                      }
+                    },
+                    "required": [
+                      "essn",
+                      "hours"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "essn": {
+                        "type": "string"
+                      },
+                      "hours": {
+                        "type": "number",
+                        "maximum": 40
+                      }
+                    },
+                    "required": [
+                      "essn",
+                      "hours"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "essn": {
+                        "type": "string"
+                      },
+                      "hours": {
+                        "type": "number",
+                        "maximum": 40
+                      }
+                    },
+                    "required": [
+                      "essn",
+                      "hours"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "essn": {
+                        "type": "string"
+                      },
+                      "hours": {
+                        "type": "number",
+                        "maximum": 40
+                      }
+                    },
+                    "required": [
+                      "essn",
+                      "hours"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "essn": {
+                        "type": "string"
+                      },
+                      "hours": {
+                        "type": "number",
+                        "maximum": 40
+                      }
+                    },
+                    "required": [
+                      "essn",
+                      "hours"
+                    ]
+                  }
+                ]
+              }
+            },
+            "required": [
+              "pnumber",
+              "controllingDepartment",
+              "pname",
+              "plocation",
+              "workers"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "pnumber": {
+                "type": "integer"
+              },
+              "controllingDepartment": {
+                "type": "integer"
+              },
+              "pname": {
+                "type": "string"
+              },
+              "plocation": {
+                "type": "string"
+              },
+              "workers": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "essn": {
+                        "type": "string"
+                      },
+                      "hours": {
+                        "type": "number",
+                        "maximum": 40
+                      }
+                    },
+                    "required": [
+                      "essn",
+                      "hours"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "essn": {
+                        "type": "string"
+                      },
+                      "hours": {
+                        "type": "number",
+                        "maximum": 40
+                      }
+                    },
+                    "required": [
+                      "essn",
+                      "hours"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "essn": {
+                      "type": "string"
+                    },
+                    "hours": {
+                      "type": "number",
+                      "maximum": 40
+                    }
+                  },
+                  "required": [
+                    "essn",
+                    "hours"
+                  ]
+                }
+              ]
+            }
+          },
+          "required": [
+            "pnumber",
+            "controllingDepartment",
+            "pname",
+            "plocation",
+            "workers"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "departments",
+    "employees",
+    "projects"
+  ]
+}
