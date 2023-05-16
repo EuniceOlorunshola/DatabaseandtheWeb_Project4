@@ -60,10 +60,15 @@ f. ## Get the names of employees who have never made a sale to a customer in the
 Consider the following data describing baseball teams and results of games:
 
 macbook-pro:baseball raj$ more teams.dat 
+
 Braves:Atlanta:ATL
+
 Cardinals:Saint Louis:STL
+
 Cubs:Chicago:CHC
+
 Diamondbacks:Arizona:ARI
+
 Indians:Cleveland:CLE
 
 macbook-pro:baseball raj$ more games.dat
@@ -95,7 +100,9 @@ Rows in teams.dat contain team name, team location, and team code, whereas rows 
 1. Write a Python program (loadData.py) to load this data into a MongoDB database. You should accept the data file names as command line parameter (sys.argv[1] is "teams.dat" and sys.argv[2] is "games.dat"). You will create two collections (named teams and games) within a database named baseballDB. You must ensure the following two constraints are satisfied:
 
   a. The team code serves as a primary key for the teams collection. So, you should make sure that no duplicate team codes are inserted into the teams collection.
+  
   b. Since the team code is used in the the games data, you must ensure that while inserting into the games collection that both the teams involved are present in the teams collection.
+  
 You may assume that the rest of the data is accurate, i.e. there are no data type mis-matches, no missing fields, etc. You may assume that teams.dat and games.dat are available in the current directory where loadData.py is located. Please delete all data before you load!
 
 2. Write a REST API program (baseball.py) that implements the following two endpoints:
