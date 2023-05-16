@@ -72,27 +72,49 @@ Diamondbacks:Arizona:ARI
 Indians:Cleveland:CLE
 
 macbook-pro:baseball raj$ more games.dat
+
 2004-03-20:ARI:CHC:10:11
+
 2004-03-23:ATL:STL:0:1
+
 2004-03-27:STL:CHC:7:9
+
 2004-03-27:CLE:ATL:1:0
+
 2004-03-30:ATL:CHC:10:5
+
 2004-04-01:CLE:ARI:8:8
+
 2004-04-15:ARI:ATL:3:11
+
 2004-04-17:CLE:STL:7:11
+
 2004-04-20:STL:ARI:10:12
+
 2004-04-22:CHC:CLE:7:4
+
 2004-04-24:CHC:ARI:7:12
+
 2004-04-29:STL:ATL:2:10
+
 2004-05-01:ATL:CLE:14:14
+
 2004-05-01:CHC:STL:10:0
+
 2004-05-04:CHC:ATL:10:8
+
 2004-05-04:ARI:CLE:8:7
+
 2004-05-08:ATL:ARI:6:8
+
 2004-05-13:STL:CLE:3:6
+
 2004-05-15:ARI:STL:7:13
+
 2004-05-15:CLE:CHC:6:8
+
 2004-05-18:ARI:CHC:13:5
+
 2004-05-22:ATL:STL:3:6
 
 Rows in teams.dat contain team name, team location, and team code, whereas rows in games.dat contain game date, visiting team code, home team code, visiting team score, and home team score.
@@ -107,12 +129,17 @@ You may assume that the rest of the data is accurate, i.e. there are no data typ
 
 2. Write a REST API program (baseball.py) that implements the following two endpoints:
 @app.route('/baseball/standings/', methods=['GET'])
+
 which returns the standings information as a JSON object shown below:
+
 { standings: [
     { losses: 3, percent: 0.667, tcode: "CHC", ties: 0, tname: "Cubs", wins: 6 },
     { losses: 3, percent: 0.611, tcode: "ARI", ties: 1, tname: "Diamondbacks", wins: 5 },
+    
     { losses: 5, percent: 0.444, tcode: "STL", ties: 0, tname: "Cardinals", wins: 4 },
+    
     { losses: 5, percent: 0.389, tcode: "ATL", ties: 1, tname: "Braves", wins: 3 },
+    
     { losses: 4, percent: 0.375, tcode: "CLE", ties: 2, tname: "Indians", wins: 2 }
   ]
 }
