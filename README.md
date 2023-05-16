@@ -39,14 +39,21 @@ Consider the company.json document from previous problem. Write JSONiq query exp
 2. employees.js.
 3. parts.js.
 4. orders.js.
-5. 
+
+
 Write Python (PyMongo) programs to answer the following queries:
 a. ## For each customer, find a list of Order Numbers they have placed.
+
 b. ## Get the names of customers who have ordered parts only from employees living in Wichita.
+
 c. ## Get employee numbers and total sales for each employee.
+
 d. ## Get the names of customers who had to wait the longest for their orders to be shipped.
+
 e. ## Get the names of parts that have been ordered the most in terms of quantity.
+
 f. ## Get the names of employees who have never made a sale to a customer in the same zipcode as themselves.
+
 
 # Part IV : Baseball Standings App using MongoDB
 
